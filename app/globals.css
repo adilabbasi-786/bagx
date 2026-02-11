@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Luxury e-commerce color palette */
+    --background: 40 30% 98%;
+    --foreground: 20 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 15% 15%;
+    --primary: 320 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 30% 96%;
+    --secondary-foreground: 20 15% 20%;
+    --muted: 40 20% 92%;
+    --muted-foreground: 20 10% 45%;
+    --accent: 320 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 20% 90%;
+    --input: 40 20% 94%;
+    --ring: 320 100% 50%;
+    --chart-1: 320 100% 50%;
+    --chart-2: 40 80% 60%;
+    --chart-3: 280 70% 55%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 200 80% 50%;
+    --radius: 0.5rem;
+    --sidebar-background: 40 30% 98%;
+    --sidebar-foreground: 20 15% 20%;
+    --sidebar-primary: 320 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 30% 90%;
+    --sidebar-accent-foreground: 320 100% 50%;
+    --sidebar-border: 40 20% 90%;
+    --sidebar-ring: 320 100% 50%;
+  }
+  .dark {
+    --background: 20 20% 12%;
+    --foreground: 40 30% 95%;
+    --card: 20 25% 15%;
+    --card-foreground: 40 30% 95%;
+    --popover: 20 25% 15%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 320 100% 60%;
+    --primary-foreground: 20 20% 10%;
+    --secondary: 20 25% 22%;
+    --secondary-foreground: 40 30% 90%;
+    --muted: 20 20% 30%;
+    --muted-foreground: 40 20% 60%;
+    --accent: 320 100% 60%;
+    --accent-foreground: 20 20% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 20 20% 25%;
+    --input: 20 20% 25%;
+    --ring: 320 100% 60%;
+    --chart-1: 320 100% 60%;
+    --chart-2: 40 80% 65%;
+    --chart-3: 280 70% 60%;
+    --chart-4: 0 84% 65%;
+    --chart-5: 200 80% 55%;
+    --sidebar-background: 20 20% 12%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 320 100% 60%;
+    --sidebar-primary-foreground: 20 20% 10%;
+    --sidebar-accent: 20 25% 22%;
+    --sidebar-accent-foreground: 320 100% 60%;
+    --sidebar-border: 20 20% 25%;
+    --sidebar-ring: 320 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
